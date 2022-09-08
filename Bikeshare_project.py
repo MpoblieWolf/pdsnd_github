@@ -153,7 +153,7 @@ def user_stats(df):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
-    
+
     user_types = df['User Type'].value_counts()
     print('The count of user types is: ', user_types)
 
@@ -188,7 +188,7 @@ def user_stats(df):
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 
-# TO DO: create a function that requires input to display the raw data
+# TO DO: create a function that requires user input to present raw data to the user.
 def view_data_rows(df):
     row = 0
     while True:
