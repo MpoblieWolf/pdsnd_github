@@ -121,7 +121,7 @@ def station_stats(df):
     common_end_station = df['End Station'].mode()[0]
     print('The most common end station is: ', common_end_station)
 
-    
+
     frequent_trip = df.groupby(['Start Station', 'End Station']).count()
     print('The most frequent combination of start and end station is: ', frequent_trip)
 
@@ -153,7 +153,7 @@ def user_stats(df):
     print('\nCalculating User Stats...\n')
     start_time = time.time()
 
-    # TO DO: Display counts of user types
+    
     user_types = df['User Type'].value_counts()
     print('The count of user types is: ', user_types)
 
